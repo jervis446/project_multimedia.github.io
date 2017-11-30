@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> DEQUINOX 2018</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/festlogo.png" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript">
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+  </script>
+</head>
+<body>
+  <div class="header" style="margin-right: 100px;">
+    <img class="headLogo" src="./assets/festlogo.png" >
+    <div class="dropdown" style="float: right; ">
+  <button onclick="myFunction()" class="dropbtn" >Brochures</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Public Relations</a>
+    <a href="#">Sponsors</a>
+  </div>
+</div>
+  </div>
+  <div class="wall">
+
+    <div class="left">
+        <center>
+          <img class="logo" src="./assets/deq2.png">
+        </center>  
+              
+    </div>
+    <div class="right">
+        <center>
+          <span>coming<br>in</span>
+        </center>
+        
+</div>
+</div>
+<div class="cntDown">
+    <p id="timer"></p>
+      
+          <script type="text/javascript">
+            var countDownDate = new Date("Feb 16, 2018 17:00:00").getTime();
+            var x = setInterval(function() {
+                var now = new Date().getTime();  
+                var distance = countDownDate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("timer").innerHTML = days + " <span>days</span> " + hours + " <span>hours</span> "+ minutes + " <span>minutes</span> " + seconds + " <span>seconds</span>";
+                     if (distance < 0) {
+                           clearInterval(x);
+                           document.getElementById("timer").innerHTML = "EXPIRED";
+                           }
+            }, 1000);
+          </script>
+  </div>
+    <div class="footer">
+          <center>
+            
+            <div class="appLink">
+              <a href="https://www.facebook.com/dequinox.jyc/" target="_blank">
+                <img class="social" src='./assets/fb.png'>
+              </a>
+              <a href="https://www.youtube.com/watch?v=hohmctPgMaA" target="_blank">
+                <img class="social" src='./assets/youtube.png'>
+              </a>
+              <a href="https://www.instagram.com/dequinox_2018/" target="_blank">
+                <img class="social" src='./assets/insta.png'>
+              </a>      
+            </div>
+            <div class="address">
+              Jaypee University of Engineering & Technology,
+              A-B Road, raghogarh, Guna, Madhya Pradesh 473226
+        </div>
+        <br>
+          
+          </center>
+  </div>
+</body>
+</html>

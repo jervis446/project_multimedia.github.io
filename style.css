@@ -1,0 +1,234 @@
+@font-face{
+font-family: "The Bold Font";
+src:url('./assets/The Bold Font.ttf');
+}
+
+@font-face{
+font-family: "Datalegreya-Thin";
+src:url('./assets/Datalegreya-Dot.otf');
+}
+*{
+	margin:0px;
+	color: white;
+	font-family: "The Bold Font";
+	font-size: 12px;
+}
+@-webkit-keyframes-apr{
+		from{right: -200px;}
+		to{right:0px;}
+	}
+body{
+	background-color: black;
+	align-content: center;
+}
+span{
+	-webkit-animation-name: apr;
+	-webkit-animation-duration: 2s;
+	font-size: 72px;
+}
+.dropbtn {
+	padding-right: 2%;
+	background-color: black;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    margin-right: 2%;
+    padding-top: 2%;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: #8a0022;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	padding-top: 2%;
+	font-size: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	width: auto;
+    display: none;
+    opacity: 0.6;
+    padding-top: 2%;
+    position: absolute;
+    background-color: #8a0022;
+    z-index: 1;
+    -webkit-transition:all 1s ease;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content :hover {
+	color: white;
+	transform-origin: center;
+	opacity:100%;
+
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	color: white;
+	transform-origin: center;
+	opacity:1;
+
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.header{
+	top:0;
+	left:0;
+	margin:0px 0px 0px 0px;
+	width:100%;
+	height:100px;
+	-webkit-box-shadow:0px 10px 0px #888888;
+	box-shadow:0px 10px 80px #000000; 
+	position: relative;
+}
+.headLogo{
+	padding-top: 20px;
+	padding-left: 40px;
+	height: 75px;
+	width: auto;
+	-webkit-transition:all .8s ease;
+}
+.headLogo:hover{
+	transform: scale(1.5,1.5); 
+	transform-origin: center;
+	opacity: 0.8;
+}
+.headText{
+	
+	padding-top: 20px;
+	padding-right: 40px;
+	float: right; 
+	color: white; 
+	font-size: 50px;
+}
+.cntDown{
+	margin-top: 40px;
+	text-align: center;
+	height: 180px;
+	width: 100%;
+	
+}
+.wall{
+	background-image: url("./assets/home2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height:500px;
+	-webkit-box-shadow:inset 0px 10px 80px #888888;
+	box-shadow:inset 0px 10px 80px #000000; 	
+
+}
+.left{
+
+	padding-left:0%;
+	padding-top:60px;
+	position: absolute;
+	float: left;
+	width: 65%;
+	height: 500px; 
+	-webkit-transition:1.3s;	
+	-webkit-transition-timing-function:ease;
+	-webkit-perspective:500px;
+	perspective: 500px;
+}
+
+.logo{
+	max-height: 350px;
+	max-width: auto;
+	-webkit-transition:1.3s;
+	-webkit-transition-timing-function:ease;
+}
+.logo:hover{
+	-webkit-transform:rotateY(10deg);
+	transform:rotateY(10deg);
+	padding-left: 5%;
+}
+.details{
+	font-family: "Datalegreya-Thin";
+	color: white;
+	border-color: black;
+	border-radius: 10px 10px 10px 10px;
+	font-size: 24px;
+	height:45px ;
+	width: 180px;
+}
+.right{
+	padding-top: 180px;
+	padding-right:0.5%; 
+	text-align: right;
+	object-position: fixed;
+	float: right;
+	width: 35%;
+	overflow:hidden;
+}
+
+#timer{
+	padding-top: 20px;
+	font-size:70px;
+	width: 100%;
+	align-content: center;
+	-webkit-transition:all 0.4s ease;
+}
+#timer:hover{
+		color: #8a0022;
+}
+#timer span{
+	font-size: 50px;
+}
+.footer{
+
+	height:100px;
+	width: 100%;
+	padding-top: 40px;
+	align-content: center;
+	text-align: center;
+}
+.appLink{
+	float: right;
+	width: 100%;
+	height:180px;
+}
+.appLink img{
+	margin-top: :40px;
+	height: 50px;
+	width: 50px;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.appLink img:hover{
+	opacity:0.8;
+	border-radius: 10px;
+	transform: scale(1.4,1.4);
+	-webkit-box-shadow:0px 10px 80px #000000;
+	box-shadow: 0px 10px 80px #000000;
+	-webkit-box-shadow: inset 0px 1px 10px #000000;
+	box-shadow: inset 0px 1px 10px #000000;
+	
+}
+.address{
+		font-family: "Neou";
+		float: bottom;
+		width: 100%
+		padding-bottom:50px;
+}
+a {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+.social{
+	padding: 0px 5px 0px 5px;
+}
